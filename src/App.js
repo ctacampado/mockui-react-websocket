@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
   componentDidMount() {
     // this is an "echo" websocket service
-  	var connection = new WebSocket('ws://localhost:3001/ws');
+  	var connection = new WebSocket('ws://localhost:8080/ws');
     // listen to onmessage event
     ///this.connection.onmessage = evt => { 
       // add the new message to state
@@ -18,7 +18,7 @@ class App extends Component {
         }
         var msg = {
             Acctype:"ir",
-            Action:"enrollemp",
+            Action:"enrollreq",
             Data:JSON.stringify(emp)
        }
        console.log(msg)
