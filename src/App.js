@@ -13,12 +13,16 @@ class App extends Component {
       	//messages : this.state.messages.concat([ evt.data ])
     connection.onopen = function () {
         var emp = {
-            Name:"batman",
-            Scheme:"scheme 1"
+            Firstname:"Bat",
+            Lastname:"Man",
+            TaxID:"1QAZ-2WSX-3EDC",
+            Employer:"XYC Inc.",
+            FundProvider:"Fund Provider A",
+            Scheme:"Scheme 1"
         }
         var msg = {
-            Acctype:"ir",
-            Action:"enrollreq",
+            Acctype:"employer",
+            Action:"enrollment_request",
             Data:JSON.stringify(emp)
        }
        console.log(msg)
