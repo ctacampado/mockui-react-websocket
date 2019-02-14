@@ -17,11 +17,11 @@ class App extends Component {
             Lastname:"Man",
             TaxID:"1QAZ-2WSX-3EDC",
             Employer:"XYC Inc.",
-            FundProvider:"Fund Provider A",
+            FPCode:"fpa",
             Scheme:"Scheme 1"
         }
         var msg = {
-            Acctype:"employer",
+            Clienttype:"employer",
             Action:"enrollment_request",
             Data:JSON.stringify(emp)
        }
